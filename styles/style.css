@@ -79,7 +79,23 @@
     justify-content: space-between;
     align-items: center;
   }
-
+  .menus .latest-item{
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15), 
+    inset 0px 4px 8px rgba(0,0,0,0.15), 
+    inset 0px 8px 16px rgba(0,0,0,0.15);
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+  .menus li span{
+    margin-left: 10px;
+  }
+  .menus li span i{
+    font-size: 16px;
+    color: red;
+  }
+  .menus li span .tiktok{
+    color: rgb(238, 29, 81);
+  }
   .menus li {
     list-style: none;
     margin-left: 2em;
@@ -122,7 +138,10 @@
     font-weight: 600;
     text-transform: uppercase;
   }
-
+ 
+  .banner-text span{
+    margin-right: 10px;
+  }
   .goat-text {
     font-size: 5em;
     font-weight: 800;
