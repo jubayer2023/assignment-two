@@ -79,23 +79,28 @@
     justify-content: space-between;
     align-items: center;
   }
-  .menus .latest-item{
-    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15), 
-    inset 0px 4px 8px rgba(0,0,0,0.15), 
-    inset 0px 8px 16px rgba(0,0,0,0.15);
+
+  .menus .latest-item {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15),
+      inset 0px 4px 8px rgba(0, 0, 0, 0.15),
+      inset 0px 8px 16px rgba(0, 0, 0, 0.15);
     padding: 8px 10px;
     border-radius: 8px;
   }
-  .menus li span{
+
+  .menus li span {
     margin-left: 10px;
   }
-  .menus li span i{
+
+  .menus li span i {
     font-size: 16px;
     color: red;
   }
-  .menus li span .tiktok{
+
+  .menus li span .tiktok {
     color: rgb(238, 29, 81);
   }
+
   .menus li {
     list-style: none;
     margin-left: 2em;
@@ -112,7 +117,13 @@
 
   /* ===========banner section starts========== */
   .banner-section {
-    margin: 30px 0px;
+    /* margin: 40px 0px; */
+    background-image: url(../images/Group\ 14.png), linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    background-position: top left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 50px 0px;
   }
 
   .banner-container {
@@ -125,11 +136,11 @@
 
   .banner-text {
     width: 50%;
-    background-image: url(../images/Group\ 14.png), linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    ;
+    /* background-image: url(../images/Group\ 14.png), linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%; */
   }
 
   .banner-title {
@@ -138,10 +149,11 @@
     font-weight: 600;
     text-transform: uppercase;
   }
- 
-  .banner-text span{
+
+  .banner-text span {
     margin-right: 10px;
   }
+
   .goat-text {
     font-size: 5em;
     font-weight: 800;
@@ -221,7 +233,9 @@
   }
 
   .card-img {
+    display: block;
     width: 100%;
+    height: auto;
   }
 
   .card-text {
@@ -230,6 +244,44 @@
     font-weight: 500;
     line-height: 24px;
     margin-top: 5px;
+  }
+
+  /*  ========= bonus part =========*/
+  .overlay-img-container {
+    max-width: 100%;
+    position: relative;
+  }
+
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* left: 0;
+    right: 0; */
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid #F948B2;
+    border-radius: 7px;
+  }
+
+  .overlay-icon {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+  }
+  .overlay-icon p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF42A5;
+    margin-top: 10px;
+
   }
 
 
@@ -241,6 +293,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 140px;
+    padding: 20px 0px;
   }
 
   .play-img {
@@ -292,7 +345,8 @@
   /* ============== Online games catagory section================ */
 
   .online-games {
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     text-align: center;
   }
 
@@ -388,7 +442,7 @@
     font-size: 15px;
   }
 
-  .footer-icon span i{
+  .footer-icon span i {
     background-color: ;
     padding: ;
     font-size: 24px;
@@ -400,21 +454,23 @@
     justify-content: center;
     /* color: green; */
   }
-  .footer-icon .facebook{
+
+  .footer-icon .facebook {
     color: #3b5998;
     background-color: #fff;
     text-align: center;
   }
-  .footer-icon .youtube{
+
+  .footer-icon .youtube {
     color: red;
     background-color: #fff;
   }
 
-  .footer-details span{
+  .footer-details span {
     font-size: 12px;
     font-weight: 500;
     padding: 10px 15px;
-    
+
   }
 
   .footer-details,
@@ -557,29 +613,35 @@
     .games-catagory .game-img {
       width: 30px;
       height: 30px;
+      padding: 0;
+      margin: 0;
     }
 
     .games-catagory .game-title {
       font-size: 8px;
       font-weight: 400;
       line-height: 10px;
+      padding-left: 0;
     }
 
     .game-catagory-two {
       gap: 0;
     }
+
     /* footer added */
-    .footer-description{
+    .footer-description {
       flex-wrap: wrap;
       margin: 0 auto;
       padding: 0;
     }
-    .footer-description p{
+
+    .footer-description p {
       width: 100%;
       padding: 0;
       margin: 0px;
     }
-    .footer-description p span{
+
+    .footer-description p span {
       padding: 0px;
       font-size: 12px;
       margin: 4px 8px;
