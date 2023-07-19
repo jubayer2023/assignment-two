@@ -107,7 +107,14 @@
     align-items: center;
   }
 
-  .banner-text {}
+  .banner-text {
+    width: 50%;
+    background-image: url(../images/Group\ 14.png), linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   .banner-title {
     color: #0B0223;
@@ -263,6 +270,144 @@
     line-height: 30px;
   }
 
+  /* ============== Online games catagory section================ */
+
+  .online-games {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .game-catagory-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .game-catagory-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .games-catagory {
+    /* width: 80%; */
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    margin-right: 10px;
+    padding: 5px;
+    transition: .5s ease;
+  }
+
+  .games-catagory:hover {
+    border: 2px solid #F948B2;
+    color: #FF42A5;
+    border-radius: 35px;
+    transition: .5s ease;
+  }
+
+  .games-catagory:hover>.game-title {
+    color: #F948B2;
+  }
+
+  .game-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .game-title {
+    color: #0B0223;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+  }
+
+  /* ===========footer part=========== */
+  footer {
+    background: #0B0223;
+    padding: 60px 0px;
+    padding-bottom: 70px;
+  }
+
+  .footer-container {
+    max-width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .footer-title,
+  .footer-description,
+  .footer-icon,
+  .footer-details {
+    max-width: 70%;
+    margin: 20px auto;
+    /* border: 2px solid red; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-description p span {
+    padding: 0px 15px;
+  }
+
+  .footer-title,
+  .footer-description,
+  .footer-icon span {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .footer-icon span i{
+    background-color: ;
+    padding: ;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    /* color: green; */
+  }
+  .footer-icon .facebook{
+    color: #3b5998;
+    background-color: #fff;
+    text-align: center;
+  }
+  .footer-icon .youtube{
+    color: red;
+    background-color: #fff;
+  }
+
+  .footer-details span{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 15px;
+    
+  }
+
+  .footer-details,
+  .copyright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+
+
   /* ============== Responsive CSS ================== */
 
 
@@ -291,7 +436,6 @@
     .banner-img {
       width: 80%;
       margin: 20px auto;
-      /* border: 2px solid red; */
     }
 
     .banner-img img {
@@ -301,9 +445,6 @@
     .banner-text {
       width: 65%;
       margin: 40px auto;
-      /* object-fit: cover; */
-      /* justify-content: center; */
-      /* text-align: center; */
     }
 
     .banner-title {
@@ -331,6 +472,7 @@
       margin: 3em auto;
 
     }
+
     /* online part */
     .online-card-container {
       grid-template-columns: 1fr;
@@ -358,23 +500,70 @@
       text-align: center;
       width: 100%;
     }
-    .play-title{
+
+    .play-title {
       font-size: 2em;
     }
-    .play-description{
+
+    .play-description {
       font-size: .75em;
       line-height: 2em;
     }
-    .play-img{
+
+    .play-img {
       width: 85%;
     }
-    .play-img .big-img{
+
+    .play-img .big-img {
       width: 100%;
     }
-    .play-img .small-img{
+
+    .play-img .small-img {
       width: 140px;
       height: 160px;
       left: -60px;
+    }
+
+    /* online games catagory */
+    .online-games {
+      width: 100%;
+    }
+
+    .game-4,
+    .game-5,
+    .game-9 {
+      display: none;
+    }
+
+    .games-catagory .game-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .games-catagory .game-title {
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 10px;
+    }
+
+    .game-catagory-two {
+      gap: 0;
+    }
+    /* footer added */
+    .footer-description{
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .footer-description p{
+      width: 100%;
+      padding: 0;
+      margin: 0px;
+    }
+    .footer-description p span{
+      padding: 0px;
+      font-size: 12px;
+      margin: 4px 8px;
     }
 
   }
