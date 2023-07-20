@@ -406,7 +406,7 @@
   }
 
   .footer-container {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     color: #fff;
     text-align: center;
@@ -851,5 +851,8 @@
       width: 100%;
       margin: 0 auto;
       padding: 0;
+    }
+    .footer-description span{
+      margin-bottom: 5px;
     }
   }
