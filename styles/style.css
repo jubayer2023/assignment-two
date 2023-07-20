@@ -838,10 +838,10 @@
       width: 100%;
     }
     .play-img .small-img{
-      width: 160px;
+      width: 150px;
       height: 170px;
       object-fit: cover;
-      top: -70px;
+      bottom: -70px;
     }
     .footer-container{
       max-width: 100%;
